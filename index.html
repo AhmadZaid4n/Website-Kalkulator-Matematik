@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project RevoU SE</title>
+    <!-- link file /css/index.css -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- link file google.font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- first header -->
+    <header>
+      <h1>Welcome to <span>Katik</span></h1>
+      <p>
+        Hai sobat, Selamat datang di katik :) <br />
+        Sebuah web apps sederhana yang berfungsi sebagai untuk menghitung nilai
+        luas dan keliling bangun datar
+      </p>
+      <nav>
+        <ul>
+          <li><a class="link-triangle" href="#triangle">Segitiga</a></li>
+          <li>
+            <a class="link-parallelogram" href="#parallelogram">Jajargenjang</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- first main / content -->
+    <main>
+      <!-- end section triangle / segitiga -->
+      <section id="triangle" class="triangle">
+        <!-- hitung luas segitiga -->
+        <div class="wide-triangle card-triangle">
+          <h1>luas segitiga</h1>
+          <div class="thumbnail">
+            <img src="/assets/1.png" alt="" />
+          </div>
+          <div class="rumus">
+            <p>Rumus Luas Segitiga Yaitu :</p>
+            <p class="ini-rumus">L = 1/2 x a x t</p>
+            <p class="ket-rumus">
+              Dimana <br />
+              L = Luas <br />
+              a = Panjang Alas <br />
+              t = Tinggi
+            </p>
+          </div>
+          <h1>HITUNG LUAS SEGITIGA</h1>
+          <div class="form-control" id="form-luas-triangle">
+            <form>
+              <input
+                type="text"
+                name="nilaiLuasTriangle"
+                id="nilaiLuasTriangle1"
+              />
+              <input
+                type="text"
+                name="nilaiLuasTriangle"
+                id="nilaiLuasTriangle2"
+              />
+              <div class="hasil">
+                <p>L = 1/2 x a x t</p>
+                <p id="rumus-luas-triangle"></p>
+                <p id="hasil-luas-triangle"></p>
+              </div>
+              <button
+                type="button"
+                onclick="kirimLuasTriangle()"
+                class="buttonKirim"
+              >
+                Hitung
+              </button>
+              <button
+                type="reset"
+                onclick="ResetLuasTriangle()"
+                class="buttonReset"
+              >
+                Reset
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- hitung keliling segitga -->
+        <div class="around-triangle card-triangle">
+          <h1>keliling segitiga</h1>
+          <div class="thumbnail">
+            <img src="/assets/1.png" alt="" />
+          </div>
+          <div class="rumus">
+            <p>Rumus Luas Segitiga Yaitu :</p>
+            <p class="ini-rumus">K = S1 x S2 x S3</p>
+            <p class="ket-rumus">
+              Dimana <br />
+              K = Keliling <br />
+              S1 = SisiA <br />
+              S2 = SisiB <br />
+              S3 = SisiC
+            </p>
+          </div>
+          <h1>HITUNG KELILING SEGITIGA</h1>
+          <div class="form-control" id="form-keliling-triangle">
+            <form>
+              <input type="text" name="nilaiLuasTriangle" id="nilaiKS1" />
+              <input type="text" name="nilaiLuasTriangle" id="nilaiKS2" />
+              <input type="text" name="nilaiLuasTriangle" id="nilaiKS3" />
+              <div class="hasil">
+                <p>K = S1 + S2 + S3</p>
+                <p id="rumus-keliling-triangle"></p>
+                <p id="hasil-keliling-triangle"></p>
+              </div>
+              <button
+                type="button"
+                onclick="kirimKelilingTriangle()"
+                class="buttonKirim"
+              >
+                Hitung
+              </button>
+              <button
+                type="reset"
+                onclick="ResetKelilingTriangle()"
+                class="buttonReset"
+              >
+                Reset
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- end section triangle / segitiga -->
+
+      <!-- first section parallelogram / jajargenjang-->
+      <section id="parallelogram" class="parallelogram">
+        <!-- hitung luas jajargenjang -->
+        <div class="wide-parallelogram card-parallelogram">
+          <h1>LUAS JAJARGENJANG</h1>
+          <div class="thumbnail">
+            <img src="/assets/2.png" alt="" />
+          </div>
+          <div class="rumus">
+            <p>Rumus Luas Jajargenjang Yaitu :</p>
+            <p class="ini-rumus">L = a (Alas) x t (Tinggi)</p>
+            <p class="ket-rumus">
+              Dimana <br />
+              L = Luas <br />
+              a = Alas <br />
+              t = Tinggi
+            </p>
+          </div>
+          <h1>HITUNG LUAS JAJARGENJANG</h1>
+          <div class="form-control" id="form-luas-parallelogram">
+            <form>
+              <input
+                type="text"
+                name="nilaiLuasTriangle"
+                id="nilaiLuasParallelogram1"
+              />
+              <input
+                type="text"
+                name="nilaiLuasTriangle"
+                id="nilaiLuasParallelogram2"
+              />
+              <div class="hasil">
+                <p>L = alas (a) x tinggi (t)</p>
+                <p id="rumus-luas-parallelogram"></p>
+                <p id="hasil-luas-parallelogran"></p>
+              </div>
+              <button
+                type="button"
+                onclick="kirimLuasParallelogram()"
+                class="buttonKirim"
+              >
+                Hitung
+              </button>
+              <button
+                type="reset"
+                onclick="ResetLuasParallelogram()"
+                class="buttonReset"
+              >
+                Reset
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- hitung keliling jajargenjang -->
+        <div class="around-parallelogram card-parallelogram">
+          <h1>KELILING JAJARGENJANG</h1>
+          <div class="thumbnail">
+            <img src="assets/2.png" alt="" />
+          </div>
+          <div class="rumus">
+            <p>Rumus Keliling Jajargenjang Yaitu :</p>
+            <p class="ini-rumus">K = 2 x (a + b)</p>
+            <p class="ket-rumus">
+              Dimana <br />
+              K = Keliling <br />
+              a = Alas <br />
+              b = Sisi Miring
+            </p>
+          </div>
+          <h1>HITUNG KELILING JAJARGENJANG</h1>
+          <div class="form-control" id="keliling-parallelogram">
+            <form action="#keliling-parallelogram">
+              <input
+                type="text"
+                name="nilaiLuasTriangle"
+                id="nilaiKelilingParallelogram1"
+              />
+              <input
+                type="text"
+                name="nilaiLuasTriangle"
+                id="nilaiKelilingParallelogram2"
+              />
+              <div class="hasil">
+                <p>K = 2 x (a + b)</p>
+                <p id="rumus-keliling-parallelogram"></p>
+                <p id="hasil-keliling-parallelogram"></p>
+              </div>
+              <button
+                type="button"
+                onclick="hitungKelilingParallelogram()"
+                class="buttonKirim"
+              >
+                Hitung
+              </button>
+              <button
+                type="reset"
+                onclick="ResetKelilingParalellogram()"
+                class="buttonReset"
+              >
+                Reset
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- end section parallelogram / jajargenjang-->
+    </main>
+    <!-- end main / content -->
+
+    <footer>
+      <p>Copyright &copy; Ahmad Zaidan - RevoU 27March - 7April 2023 Software Engineering</p>
+    </footer>
+
+    <!--link file /js/index.js  -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "JetBrains Mono";
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header h1 span {
+  color: #25daf6;
+  font-weight: 700;
+}
+
+header p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* header  part nav*/
+header nav {
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid;
+  width: 100%;
+  border-radius: 10px;
+}
+
+header nav ul li .link-triangle {
+  background-color: rgb(44, 199, 250);
+  color: #fff;
+  transition: 0.4s;
+}
+
+header nav ul li .link-triangle:hover {
+  background-color: transparent;
+  color: #25daf6;
+}
+
+header nav ul li .link-parallelogram {
+  background-color: transparent;
+  color: #25daf6;
+  transition: 0.4s;
+}
+
+header nav ul li .link-parallelogram:hover {
+  background-color: rgb(44, 199, 250);
+  color: #fff;
+}
+
+/* main */
+main {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* main part triangle and 
+main part .paralellogram */
+main .triangle,
+main .parallelogram {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+main .wide-triangle,
+main .wide-parallelogram {
+  border: 1px solid #25daf6;
+}
+
+main .around-triangle,
+main .around-parallelogram {
+  border: 1px solid #25daf6;
+}
+
+main .triangle .card-triangle h1,
+main .parallelogram .card-parallelogram h1 {
+  padding: 30px;
+  background-color: #25daf6;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main .triangle .card-triangle .thumbnail,
+main .parallelogram .card-parallelogram .thumbnail {
+  height: 200px;
+  width: 200px;
+  margin: 40px auto 0;
+}
+
+main .triangle .card-triangle .thumbnail img,
+main .parallelogram .card-parallelogram .thumbnail img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+main .triangle .card-triangle .rumus,
+main .parallelogram .card-parallelogram .rumus {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+main .triangle .card-triangle .rumus .ini-rumus,
+main .parallelogram .card-parallelogram .rumus .ini-rumus {
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+
+main .triangle .card-triangle .rumus .ket-rumus,
+main .parallelogram .card-parallelogram .rumus .ket-rumus {
+  line-height: 2;
+}
+
+/* .triangle part of luas dan keliling and 
+.parallelogram part of luas dan keliling*/
+main .triangle .card-triangle .form-control,
+main .parallelogram .card-parallelogram .form-control {
+  padding: 20px;
+}
+
+main .triangle .card-triangle .form-control form,
+main .parallelogram .card-parallelogram .form-control form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .triangle .card-triangle .form-control form input,
+main .parallelogram .card-parallelogram .form-control form input {
+  font-size: 1.3rem;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #6b6969;
+}
+
+main .triangle .card-triangle .form-control form input[type="text"]:focus,
+main .parallelogram .card-parallelogram .form-control form input[type="text"]:focus {
+  border: 1px solid #25daf6;
+  outline: none;
+}
+
+main .triangle .card-triangle .form-control form button,
+main .parallelogram .card-parallelogram .form-control form button {
+  width: 10%;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: #25daf6;
+  color: #fff;
+  cursor: pointer;
+  transition: .8s;
+}
+
+main .triangle .card-triangle .form-control form button:hover,
+main .parallelogram .card-parallelogram .form-control form button:hover {
+  background-color: transparent;
+  color: #25daf6;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+main .triangle .card-triangle .form-control form .buttonKirim,
+main .parallelogram .card-parallelogram .form-control form .buttonKirim {
+  margin: 0 auto;
+}
+main .triangle .card-triangle .form-control form .buttonReset,
+main .parallelogram .card-parallelogram .form-control form .buttonReset {
+  margin-left: auto;
+  background-color: orange;
+}
+
+/* footer */
+footer {
+  background-color: #25daf6;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
